@@ -1,0 +1,107 @@
+body {
+  background: url(https://img.freepik.com/free-vector/gorgeous-clouds-background-with-blue-sky-design_1017-25501.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1702684800&semt=ais)
+    no-repeat;
+  background-size: cover;
+  font-family: cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#weather-container {
+  background: rgb(76, 141, 207);
+  box-shadow: 0px 0px 10px rgb(21, 96, 172),
+    0px 10px 20px rgba(50, 113, 176, 0.7);
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 15px;
+
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+h2 {
+  font-size: 40px;
+  color: black;
+  margin: 8px 0;
+}
+label,
+p {
+  color: black;
+  margin: 8px 0;
+}
+
+input {
+  width: calc(100% - 16px);
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid white;
+  color: black;
+  margin-top: 20px;
+}
+
+button {
+  background: lemonchiffon;
+  color: rgb(165, 162, 162);
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100px;
+  font-size: 15px;
+}
+
+button:hover {
+  background: yellow;
+}
+
+#temp-div p {
+  font-size: 60px;
+  margin-top: -30px;
+}
+
+#weather-info {
+  font-size: 20px;
+}
+
+#weather-icon {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 10px;
+  margin-bottom: 0;
+  display: none;
+}
+
+#hourly-forecast {
+  margin-top: 50px;
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hourly-item {
+  flex: 0 0 auto;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+  color: black;
+}
+
+.hourly-item img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+#hourly-heading {
+  color: black;
+  margin-top: 10px;
+}
